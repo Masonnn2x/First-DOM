@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="container"></div>
+   <script>
+const container = document.querySelector('#container');
+const myParagraph = document.createElement('p');
+myParagraph.textContent = "Hey I'm Red";
+myParagraph.style.color='red';
+container.appendChild(myParagraph);
+
+const myh3 = document.createElement('h3');
+myh3.textContent = "I'm a blue h3!";
+myh3.style.color = 'blue'
+container.appendChild(myh3);
+
+const myDiv = document.createElement('div');
+myDiv.style.border ='2px solid black';
+myDiv.style.backgroundColor= 'pink';
+myDiv.style.padding = '10px';  
+container.appendChild(myDiv);
+
+const myH1 = document.createElement('h1');
+myH1.textContent = "I'm in a div";
+myDiv.appendChild(myH1);
+
+const myP = document.createElement ('p')
+myP.textContent = "ME TOO";
+myDiv.appendChild(myP);
+
+
+    </script>
+</body>
+</html>
